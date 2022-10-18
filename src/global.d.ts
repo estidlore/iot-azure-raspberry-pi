@@ -13,6 +13,11 @@ declare module "*.png" {
   export = value;
 }
 
+declare module "*.pdf" {
+  const value: string;
+  export = value;
+}
+
 declare module "*.svg" {
   const value: any;
   export = value;

@@ -43,7 +43,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|pdf)$/i,
         type: 'asset/resource',
       },
     ]
@@ -58,6 +58,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
+      assets: src("assets"),
       components: src("components"),
       imgs: src("imgs"),
       styles: src("styles"),
